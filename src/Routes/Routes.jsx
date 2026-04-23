@@ -3,6 +3,7 @@ import MainLayout from "../Layout/MainLayout";
 import Home from "../Pages/Home/Home";
 import Books from "../Pages/Books/Books";
 import Error from "../Pages/Error/Error";
+import Banner from "../Pages/Banner/Banner";
 
 export const router = createBrowserRouter([
   {
@@ -12,6 +13,10 @@ export const router = createBrowserRouter([
       {
         index: true,
         Component: Home,
+      },
+      {
+        path: "banner",
+        Component: Banner,
       },
       {
         path: "books",
