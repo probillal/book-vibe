@@ -2,6 +2,7 @@ import AllBooks from "../../Components/HomePage/AllBooks";
 import Banner from "../Banner/Banner";
 
 const Home = () => {
+  //
   return (
     <div>
       <Banner></Banner>

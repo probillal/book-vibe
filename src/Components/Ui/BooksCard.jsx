@@ -8,7 +8,7 @@ const BooksCard = ({ book }) => {
       className="card bg-base-100 shadow-sm my-4"
     >
       <figure>
-        <img src={book.image} className="h-[280px] p-2" alt={book.bookName} />
+        <img src={book.image} className="h-[280px] py-4" alt={book.bookName} />
       </figure>
       <div className="card-body">
         <div className="flex items-center gap-2">

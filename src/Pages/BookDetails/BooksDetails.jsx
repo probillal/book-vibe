@@ -1,12 +1,14 @@
+import { useContext } from "react";
 import { useLoaderData, useParams } from "react-router";
+import { BookContext } from "../../Context/BookProvider";
 
 const BooksDetails = () => {
   const { id } = useParams();
   //   console.log("params", id);
   const books = useLoaderData();
-  console.log("Books data", books);
+  //   console.log("Books data", books);
   const expectedBook = books.find((book) => book.bookId == id);
-  console.log(expectedBook);
+  //   console.log(expectedBook);
   const {
     author,
     bookId,
@@ -20,6 +22,9 @@ const BooksDetails = () => {
     totalPages,
     yearOfPublishing,
   } = expectedBook;
+  const { handleMarkAsRead } = useContext(BookContext);
+  console.log(handleMarkAsRead, "bookContext");
+
   return (
     <div className="grid md:grid-cols-2 bg-base-100 shadow-sm container mx-auto gap-15 mt-10">
       <figure className="flex items-center justify-center bg-gray-100">
@@ -46,24 +51,29 @@ const BooksDetails = () => {
         </div>
 
         <div className="border-t border-gray-300 space-y-3">
-          <div className="mt-4">
+          <div className="mt-4 flex justify-between items-center">
             <span>Number of pages:</span>{" "}
             <span className="font-bold">{totalPages}</span>
           </div>
-          <div>
+          <div className="flex justify-between items-center">
             <span>Publisher:</span>{" "}
             <span className="font-bold">{publisher}</span>
           </div>
-          <div>
+          <div className="flex justify-between items-center">
             <span>Year of publishing:</span>{" "}
             <span className="font-bold">{yearOfPublishing}</span>
           </div>
-          <div>
+          <div className="flex justify-between items-center">
             <span>Rating:</span> <span className="font-bold">{rating}</span>
           </div>
           <div className="mt-4">
-            <button className="btn border mr-4">Listen</button>
-            <button className="btn btn-success">Listen</button>
+            <button
+              className="btn border mr-4"
+              onClick={() => handleMarkAsRead(expectedBook)}
+            >
+              Mark as Read
+            </button>
+            <button className="btn btn-success">Add to wishlist</button>
           </div>
         </div>
       </div>
