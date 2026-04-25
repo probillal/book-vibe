@@ -22,8 +22,8 @@ const BooksDetails = () => {
     totalPages,
     yearOfPublishing,
   } = expectedBook;
-  const { handleMarkAsRead } = useContext(BookContext);
-  console.log(handleMarkAsRead, "bookContext");
+  const { handleMarkAsRead, handleWishList } = useContext(BookContext);
+  console.log(handleMarkAsRead, handleWishList, "bookContext");
 
   return (
     <div className="grid md:grid-cols-2 bg-base-100 shadow-sm container mx-auto gap-15 mt-10">
@@ -73,7 +73,12 @@ const BooksDetails = () => {
             >
               Mark as Read
             </button>
-            <button className="btn btn-success">Add to wishlist</button>
+            <button
+              className="btn btn-success"
+              onClick={() => handleWishList(expectedBook)}
+            >
+              Add to wishlist
+            </button>
           </div>
         </div>
       </div>
