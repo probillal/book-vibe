@@ -9,6 +9,7 @@ Book Vibe is a modern web application where users can explore books, view detail
 🔗 https://github.com/probillal/book-vibe
 
 ✨ Features
+
 📖 Browse and explore books
 🔍 View detailed information about each book
 ❤️ Mark books as read or wishlist
@@ -46,6 +47,7 @@ npm run dev
 🙌 Author
 
 S M Billal Hossain
+
 Frontend Developer
 
 ⭐ Support
