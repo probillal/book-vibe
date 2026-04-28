@@ -13,8 +13,11 @@ Book Vibe is a modern web application where users can explore books, view detail
 📖 Browse and explore books
 
 🔍 View detailed information about each book,
+
 ❤️ Mark books as read or wishlist,
+
 ⚡ Fast and responsive UI,
+
 📱 Mobile-friendly design,
 
 🛠️ Tech Stack
@@ -36,7 +39,9 @@ State Management
 
 
 ⚙️ Installation & Setup
+
 # Clone the repository
+
 git clone https://github.com/probillal/book-vibe.git
 
 # Navigate to project folder
@@ -46,10 +51,15 @@ cd book-vibe
 npm install
 
 # Run the project
+
 npm run dev
+
 📌 Future Improvements
+
 🔐 User authentication system
+
 📊 Advanced filtering & sorting
+
 🌐 API integration for real-time data
 
 🙌 Author
