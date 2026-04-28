@@ -11,17 +11,24 @@ Book Vibe is a modern web application where users can explore books, view detail
 ✨ Features
 
 📖 Browse and explore books
-🔍 View detailed information about each book
-❤️ Mark books as read or wishlist
-⚡ Fast and responsive UI
-📱 Mobile-friendly design
+
+🔍 View detailed information about each book,
+❤️ Mark books as read or wishlist,
+⚡ Fast and responsive UI,
+📱 Mobile-friendly design,
 
 🛠️ Tech Stack
+
 React
+
 Tailwind CSS
+
 JavaScript (ES6+)
+
 React Router
+
 State Management
+
 📸 Screenshots 
 
 <img width="2480" height="4516" alt="ALl Books" src="https://github.com/user-attachments/assets/4b1cb0f3-990c-4721-a12b-e735b4f04062" />
@@ -44,6 +51,7 @@ npm run dev
 🔐 User authentication system
 📊 Advanced filtering & sorting
 🌐 API integration for real-time data
+
 🙌 Author
 
 S M Billal Hossain
